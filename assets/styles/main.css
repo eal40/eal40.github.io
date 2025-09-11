@@ -967,25 +967,8 @@ p {
     100% { background-position: 0% 50%; }
 }
 
-/* Fix for hero image container white background */
-.hero-image-container {
-    background: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    display: inline-block;
-    width: auto !important;
-    height: auto !important;
-}
-
-/* Ensure picture element has no default styling */
-picture {
-    background: transparent !important;
-    border: none !important;
-    padding: 0 !important;
-    margin: 0 !important;
-}
+/* Hero image styling */
+/* Removed hero-image-container as it's no longer needed */
 
 @keyframes float {
     0%, 100% { transform: translate(0, 0) rotate(0deg); }
@@ -1720,8 +1703,9 @@ picture {
     display: block;
     background: white;
     /* Enhanced security and performance */
-    loading: lazy;
-    referrerpolicy: no-referrer-when-downgrade;
+    /* Use HTML attributes instead of CSS for these properties */
+    /* loading: lazy; */
+    /* referrerpolicy: no-referrer-when-downgrade; */
 }
 
 /* Loading state for iframes */
@@ -5681,7 +5665,7 @@ hanced Certification Controls */
    ========================================================================== */
 
 /* Picture element containers */
-.hero-image-container,
+/* Removed hero-image-container reference */
 .project-image-container {
     display: block;
     width: 100%;
@@ -5787,7 +5771,7 @@ img {
 }
 
 /* WebP support detection styles */
-.webp .hero-image-container img,
+/* Removed webp hero-image-container reference */
 .webp .project-image-container img {
     /* Additional optimizations for WebP-supported browsers */
     image-rendering: auto;
@@ -6017,14 +6001,14 @@ img.optimized {
 }
 
 /* Optimize image containers */
-.hero-image-container,
+/* Removed hero-image-container reference */
 .project-image-container {
     /* Prevent layout shift during image loading */
     position: relative;
     overflow: hidden;
 }
 
-.hero-image-container::before,
+/* Removed hero-image-container::before reference */
 .project-image-container::before {
     content: '';
     display: block;
@@ -6070,8 +6054,9 @@ img.optimized {
 /* Optimize third-party content */
 iframe {
     /* Improve iframe loading performance */
-    loading: lazy;
-    importance: low;
+    /* Use HTML attributes instead of CSS for these properties */
+    /* loading: lazy; */
+    /* importance: low; */
 }
 
 /* Connection-aware optimizations */
@@ -6407,13 +6392,7 @@ img.image-error::after {
 }
 
 /* CSS optimization classes */
-.css-optimized {
-    /* Marker class for optimized CSS delivery */
-}
-
-.js-optimized {
-    /* Marker class for optimized JavaScript delivery */
-}
+/* Removed empty rulesets */
 
 /* Performance budget warnings */
 .performance-budget-warning {
@@ -6487,15 +6466,8 @@ img.image-error::after {
     }
 }
 
-/* Critical CSS inlined indicator */
-.critical-css-inlined {
-    /* Marker for pages with inlined critical CSS */
-}
-
-/* Resource hints applied indicator */
-.resource-hints-applied {
-    /* Marker for pages with resource hints */
-}
+/* Critical CSS inlined indicator and Resource hints applied indicator */
+/* Removed empty rulesets */
 /* ===== 
 PERFORMANCE OPTIMIZATION STYLES ===== */
 
