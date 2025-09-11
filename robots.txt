@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://[your-domain].com/sitemap.xml
+
+# Disallow crawling of certain directories
+Disallow: /assets/installers/
+Disallow: /.git/
+Disallow: /node_modules/
+
+# Allow crawling of important assets
+Allow: /assets/images/
+Allow: /assets/styles/
+Allow: /assets/scripts/
+Allow: /assets/documents/resume.pdf

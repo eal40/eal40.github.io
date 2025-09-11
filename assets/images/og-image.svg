@@ -1,0 +1,41 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  
+  <!-- Content Container -->
+  <rect x="80" y="80" width="1040" height="470" fill="rgba(255,255,255,0.1)" rx="20"/>
+  
+  <!-- Profile Circle -->
+  <circle cx="300" cy="315" r="80" fill="rgba(255,255,255,0.2)" stroke="white" stroke-width="4"/>
+  <circle cx="300" cy="315" r="60" fill="rgba(255,255,255,0.3)"/>
+  
+  <!-- Text Content -->
+  <text x="450" y="280" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="white">
+    [Student Name]
+  </text>
+  <text x="450" y="330" font-family="Arial, sans-serif" font-size="28" fill="rgba(255,255,255,0.9)">
+    Computer Science Student
+  </text>
+  <text x="450" y="370" font-family="Arial, sans-serif" font-size="24" fill="rgba(255,255,255,0.8)">
+    Portfolio • [University Name]
+  </text>
+  <text x="450" y="410" font-family="Arial, sans-serif" font-size="20" fill="rgba(255,255,255,0.7)">
+    Web Development • Desktop Applications • Software Engineering
+  </text>
+  
+  <!-- Decorative Elements -->
+  <circle cx="1000" cy="150" r="30" fill="rgba(255,255,255,0.1)"/>
+  <circle cx="1050" cy="200" r="20" fill="rgba(255,255,255,0.1)"/>
+  <circle cx="950" cy="180" r="15" fill="rgba(255,255,255,0.1)"/>
+  
+  <circle cx="150" cy="500" r="25" fill="rgba(255,255,255,0.1)"/>
+  <circle cx="200" cy="480" r="15" fill="rgba(255,255,255,0.1)"/>
+  <circle cx="100" cy="450" r="20" fill="rgba(255,255,255,0.1)"/>
+</svg>

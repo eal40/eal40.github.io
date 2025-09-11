@@ -1,0 +1,14 @@
+# CNAME Configuration Template
+# 
+# Instructions:
+# 1. Rename this file to "CNAME" (no extension)
+# 2. Replace "yourdomain.com" with your actual domain
+# 3. Use only the domain name, no http:// or https://
+# 4. For subdomains, include the full subdomain (e.g., www.yourdomain.com)
+#
+# Examples:
+# yourdomain.com
+# www.yourdomain.com
+# portfolio.yourdomain.com
+
+yourdomain.com

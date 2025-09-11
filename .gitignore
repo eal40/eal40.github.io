@@ -65,4 +65,17 @@ temp/
 # Personal files (replace with actual personal info when ready)
 assets/documents/resume.pdf
 assets/images/headshot.*
-personal-info.md
+personal-info.md# GitHub P
+ages
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Deployment artifacts
+.github/
+!.github/workflows/
+
+# Local development
+.vscode/settings.json
+.idea/workspace.xml

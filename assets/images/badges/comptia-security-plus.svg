@@ -1,0 +1,8 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="80" height="80" rx="12" fill="#C8102E"/>
+<text x="40" y="20" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="9" font-weight="bold">CompTIA</text>
+<svg x="25" y="25" width="30" height="30" viewBox="0 0 24 24" fill="white">
+<path d="M12 1L3 5V11C3 16.55 6.84 21.74 12 23C17.16 21.74 21 16.55 21 11V5L12 1ZM10 17L6 13L7.41 11.59L10 14.17L16.59 7.58L18 9L10 17Z"/>
+</svg>
+<text x="40" y="70" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8">Security+</text>
+</svg>

@@ -6,9 +6,24 @@
   "scripts": {
     "start": "npx live-server --port=3000 --open=/",
     "dev": "npx live-server --port=3000 --open=/ --watch=assets/",
-    "build": "echo 'Static site - no build process required'",
-    "test": "echo 'Tests will be added in later tasks'",
-    "deploy": "echo 'Deploy to GitHub Pages via repository settings'"
+    "build": "npm run build:css && npm run build:js && npm run build:images",
+    "build:css": "cleancss -o assets/styles/main.min.css assets/styles/main.css",
+    "build:js": "terser assets/scripts/main.js -o assets/scripts/main.min.js -c -m",
+    "build:images": "echo 'Image optimization would run here'",
+    "optimize": "npm run build",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:ci": "jest --watchAll=false",
+    "test:coverage": "jest --coverage",
+    "test:e2e": "echo 'Start server with: npm start' && echo 'Then run: npx cypress run'",
+    "test:e2e:open": "echo 'Start server with: npm start' && echo 'Then run: npx cypress open'",
+    "cypress:run": "cypress run",
+    "cypress:open": "cypress open",
+    "deploy": "echo 'Deploy to GitHub Pages via repository settings'",
+    "test:deployment": "node scripts/test-deployment.js",
+    "test:deployment:local": "node scripts/test-deployment.js http://localhost:3000",
+    "lighthouse": "lhci autorun",
+    "lighthouse:local": "lhci autorun --config=lighthouserc.local.js"
   },
   "keywords": [
     "portfolio",
@@ -23,7 +38,18 @@
   "author": "eal40",
   "license": "MIT",
   "devDependencies": {
-    "live-server": "^1.2.2"
+    "@testing-library/jest-dom": "^6.1.4",
+    "cypress": "^13.17.0",
+    "start-server-and-test": "^2.0.3",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "live-server": "^1.2.2",
+    "clean-css-cli": "^5.6.2",
+    "terser": "^5.24.0",
+    "imagemin-cli": "^7.0.0",
+    "html-validate": "^8.7.4",
+    "@axe-core/cli": "^4.8.2",
+    "@lhci/cli": "^0.12.0"
   },
   "repository": {
     "type": "git",
@@ -34,5 +60,37 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "jest": {
+    "testEnvironment": "jsdom",
+    "setupFilesAfterEnv": [
+      "<rootDir>/tests/setup.js"
+    ],
+    "testMatch": [
+      "<rootDir>/tests/navigation.test.js",
+      "<rootDir>/tests/form-validation.test.js",
+      "<rootDir>/tests/interactive-elements.test.js",
+      "<rootDir>/tests/performance-optimizations.test.js"
+    ],
+    "collectCoverageFrom": [
+      "assets/scripts/*.js",
+      "!assets/scripts/**/*.min.js",
+      "!assets/scripts/*test*.js",
+      "!**/node_modules/**"
+    ],
+    "coverageDirectory": "coverage",
+    "coverageReporters": [
+      "text",
+      "lcov",
+      "html"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 50,
+        "functions": 50,
+        "lines": 50,
+        "statements": 50
+      }
+    }
+  }
 }

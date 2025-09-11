@@ -36,12 +36,27 @@ A modern, responsive portfolio website for undergraduate students seeking intern
 
 ## Deployment
 
-This website is deployed on GitHub Pages:
+This website is designed for deployment on GitHub Pages with automated CI/CD:
 
-1. Push code to GitHub repository: `eal40.github.io`
-2. GitHub Pages is automatically enabled for username.github.io repositories
-3. Site is automatically deployed from the main branch
-4. Access via `https://eal40.github.io`
+### Quick Start
+1. Create GitHub repository (recommended: `username.github.io`)
+2. Push code to main branch
+3. Enable GitHub Pages in repository settings
+4. Site automatically deploys and updates on each push
+
+### Detailed Setup
+See [DEPLOYMENT.md](DEPLOYMENT.md) for comprehensive deployment instructions including:
+- Repository configuration options
+- Custom domain setup
+- GitHub Actions automation
+- Troubleshooting guide
+
+### Repository Options
+- **Username repo**: `username.github.io` → `https://username.github.io`
+- **Custom repo**: `portfolio` → `https://username.github.io/portfolio`
+- **Custom domain**: Configure CNAME for your own domain
+
+For step-by-step setup, follow the [GitHub Pages Setup Checklist](setup-github-pages.md).
 
 ## Customization
 
