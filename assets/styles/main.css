@@ -941,8 +941,7 @@ p {
 
 /* Hero Section */
 .hero-section {
-    min-height: 100vh;
-    min-height: 100dvh; /* Dynamic viewport height for mobile browsers */
+    min-height: auto; /* Remove full viewport height */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -958,8 +957,8 @@ p {
     animation: gradientShift 15s ease infinite;
     
     color: var(--text-inverse);
-    padding-top: 80px; /* Account for fixed navigation */
-    padding-bottom: var(--space-8);
+    padding-top: 120px; /* Account for fixed navigation */
+    padding-bottom: var(--space-12);
 }
 
 @keyframes gradientShift {
@@ -968,29 +967,24 @@ p {
     100% { background-position: 0% 50%; }
 }
 
-/* Hero background overlay for better text readability */
-.hero-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.1);
-    z-index: 1;
+/* Fix for hero image container white background */
+.hero-image-container {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: inline-block;
+    width: auto !important;
+    height: auto !important;
 }
 
-/* Decorative elements */
-.hero-section::after {
-    content: '';
-    position: absolute;
-    top: -50%;
-    right: -50%;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
-    animation: float 20s ease-in-out infinite;
-    z-index: 1;
+/* Ensure picture element has no default styling */
+picture {
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 @keyframes float {
@@ -1002,9 +996,10 @@ p {
 .hero-container {
     max-width: var(--container-max);
     margin: 0 auto;
-    padding: var(--space-8) var(--space-4);
+    padding: var(--space-4) var(--space-4);
     position: relative;
     z-index: 2;
+    background: transparent; /* Ensure no white background */
 }
 
 .hero-content {
@@ -1013,6 +1008,7 @@ p {
     align-items: center;
     gap: var(--space-8);
     animation: heroFadeIn 1.2s ease-out;
+    background: transparent; /* Ensure no white background */
 }
 
 @keyframes heroFadeIn {
