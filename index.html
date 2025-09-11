@@ -265,11 +265,13 @@
         <section id="home" class="hero-section" aria-labelledby="hero-heading">
             <div class="hero-container">
                 <div class="hero-content">
-                    <img src="assets/images/profilepic.jpg"
-                        alt="Eugene Alforte's professional headshot"
-                        aria-describedby="headshot-description"
-                        class="hero-image" loading="eager"
-                        sizes="(max-width: 768px) 300px, (max-width: 1200px) 400px, 500px" width="500" height="500">
+                    <picture class="hero-image-container">
+                        <img src="assets/images/placeholders/profilepic.png"
+                            alt="Eugene Alforte's professional headshot"
+                            aria-describedby="headshot-description"
+                            class="hero-image" loading="eager"
+                            sizes="(max-width: 768px) 300px, (max-width: 1200px) 400px, 500px" width="500" height="500">
+                    </picture>
                     <span id="headshot-description" class="sr-only">Professional headshot of Eugene Alforte, an Information Technology student wearing business attire, smiling at the camera against a neutral background</span>
                     <div class="hero-text">
                         <h1 id="hero-heading">Eugene Ernest A. Alforte</h1>
@@ -1498,9 +1500,6 @@
         </div>
     </footer>
 
-    <!-- Performance optimization scripts -->
-    <script src="assets/scripts/performance-optimizer.js"></script>
-    <script src="assets/scripts/resource-optimizer.js"></script>
     <!-- Core Performance Scripts (Load First) -->
     <script src="assets/scripts/error-handler.js"></script>
     <script src="assets/scripts/performance-optimizer.js"></script>
@@ -1513,7 +1512,6 @@
     <script src="assets/scripts/main.js"></script>
 
     <!-- Performance Monitoring (Development) -->
-    <script src="assets/scripts/performance-dashboard.js"></script>
     <script src="assets/scripts/performance-monitor.js"></script>
 
     <!-- Accessibility Scripts -->
