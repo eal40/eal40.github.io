@@ -18,13 +18,13 @@
   
   <!-- Text Content -->
   <text x="400" y="260" font-family="Arial, sans-serif" font-size="44" font-weight="bold" fill="white">
-    [Student Name]
+    Eugene Alforte
   </text>
   <text x="400" y="310" font-family="Arial, sans-serif" font-size="26" fill="rgba(255,255,255,0.9)">
-    Computer Science Student Portfolio
+    Information Technology Student Portfolio
   </text>
   <text x="400" y="350" font-family="Arial, sans-serif" font-size="22" fill="rgba(255,255,255,0.8)">
-    [University Name] • Seeking Internships
+    University of Mindanao Digos College • Seeking Internships
   </text>
   <text x="400" y="390" font-family="Arial, sans-serif" font-size="18" fill="rgba(255,255,255,0.7)">
     JavaScript • Python • Java • Web Development

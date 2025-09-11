@@ -3066,8 +3066,8 @@ const CertificationManager = {
         PortfolioUtils.showNotification('Certifications data exported successfully', 'success');
     }
 };
-/
-/ Education Section Functionality
+
+// Education Section Functionality
 function initializeEducation() {
     handleGPADisplay();
     initializeEducationAnimations();
@@ -3138,9 +3138,9 @@ function initializeEducationAnimations() {
 // Education data management (for easy updates)
 const educationData = {
     university: {
-        name: "[University Name]",
-        location: "[City, State]",
-        degree: "Bachelor of Science in Computer Science",
+        name: "University of Mindanao Digos College",
+        location: "Digos City, Davao del Sur",
+        degree: "Bachelor of Science in Information Technology",
         major: "Computer Science",
         minor: "Mathematics",
         graduationDate: "May 2025",
@@ -3369,8 +3369,7 @@ function handleEducationErrors() {
 document.addEventListener('DOMContentLoaded', function() {
     handleEducationErrors();
 });
-// =====
- CONTACT FORM FUNCTIONALITY =====
+// ===== CONTACT FORM FUNCTIONALITY =====
 
 // Initialize contact form functionality
 function initializeContactForm() {

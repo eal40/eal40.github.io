@@ -1,49 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://[your-domain].com/</loc>
+        <loc>https://eugenealforte.github.io/</loc>
         <lastmod>2024-12-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://[your-domain].com/#about</loc>
+        <loc>https://eugenealforte.github.io/#about</loc>
         <lastmod>2024-12-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://[your-domain].com/#projects</loc>
+        <loc>https://eugenealforte.github.io/#projects</loc>
         <lastmod>2024-12-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://[your-domain].com/#skills</loc>
+        <loc>https://eugenealforte.github.io/#skills</loc>
         <lastmod>2024-12-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://[your-domain].com/#certifications</loc>
+        <loc>https://eugenealforte.github.io/#certifications</loc>
         <lastmod>2024-12-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://[your-domain].com/#education</loc>
+        <loc>https://eugenealforte.github.io/#education</loc>
         <lastmod>2024-12-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://[your-domain].com/#contact</loc>
+        <loc>https://eugenealforte.github.io/#contact</loc>
         <lastmod>2024-12-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://[your-domain].com/assets/documents/resume.pdf</loc>
+        <loc>https://eugenealforte.github.io/assets/documents/resume.pdf</loc>
         <lastmod>2024-12-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>

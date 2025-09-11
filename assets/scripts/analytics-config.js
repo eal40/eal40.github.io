@@ -22,7 +22,7 @@ const ANALYTICS_CONFIG = {
         customDimensions: {
             user_type: 'student',
             portfolio_version: '1.0',
-            university: '[University Name]'
+            university: 'University of Mindanao Digos College'
         }
     },
     
