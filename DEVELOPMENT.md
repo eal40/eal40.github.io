@@ -9,10 +9,10 @@
 
 ### Quick Start
 
-1. **Clone the repository** (when ready to connect to GitHub):
+1. **Clone the repository**:
    ```bash
-   git clone https://github.com/username/portfolio-website.git
-   cd portfolio-website
+   git clone https://github.com/eal40/eal40.github.io.git
+   cd eal40.github.io
    ```
 
 2. **Install development dependencies** (optional):
@@ -84,28 +84,25 @@
 
 ### GitHub Repository Setup
 
-1. **Create GitHub repository**:
-   - Go to GitHub.com and create new repository
-   - Choose either `username.github.io` or custom name
-   - Don't initialize with README (we already have one)
+✅ **Repository already connected**: `eal40.github.io`
 
-2. **Connect local repository**:
-   ```bash
-   git remote add origin https://github.com/username/repository-name.git
-   git branch -M main
-   git push -u origin main
-   ```
+**Push your changes**:
+```bash
+git push -u origin main
+```
 
-3. **Enable GitHub Pages**:
-   - Go to repository Settings > Pages
-   - Select source: Deploy from branch
-   - Choose branch: main
-   - Folder: / (root)
-   - Save settings
+**GitHub Pages**:
+- GitHub Pages is automatically enabled for `username.github.io` repositories
+- No additional setup required in repository settings
+- Site automatically deploys from the main branch
+- Access your deployed site at: `https://eal40.github.io`
 
-4. **Access deployed site**:
-   - URL will be: `https://username.github.io/repository-name`
-   - Or custom domain if configured
+**Future updates**:
+```bash
+git add .
+git commit -m "Your commit message"
+git push origin main
+```
 
 ### Troubleshooting
 

@@ -1,6 +1,8 @@
 # Implementation Plan
 
-- [-] 1. Set up project structure and GitHub repository
+- [x] 1. Set up project structure and GitHub repository
+
+
 
 
 

@@ -36,12 +36,12 @@ A modern, responsive portfolio website for undergraduate students seeking intern
 
 ## Deployment
 
-This website is designed to be deployed on GitHub Pages:
+This website is deployed on GitHub Pages:
 
-1. Push code to GitHub repository
-2. Enable GitHub Pages in repository settings
-3. Choose source branch (main/master)
-4. Access via `https://username.github.io/repository-name`
+1. Push code to GitHub repository: `eal40.github.io`
+2. GitHub Pages is automatically enabled for username.github.io repositories
+3. Site is automatically deployed from the main branch
+4. Access via `https://eal40.github.io`
 
 ## Customization
 

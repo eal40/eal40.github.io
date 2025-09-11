@@ -20,16 +20,16 @@
     "css",
     "javascript"
   ],
-  "author": "Student Name",
+  "author": "eal40",
   "license": "MIT",
   "devDependencies": {
     "live-server": "^1.2.2"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/username/portfolio-website.git"
+    "url": "https://github.com/eal40/eal40.github.io.git"
   },
-  "homepage": "https://username.github.io/portfolio-website",
+  "homepage": "https://eal40.github.io",
   "browserslist": [
     "> 1%",
     "last 2 versions",
