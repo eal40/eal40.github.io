@@ -1,8 +1,0 @@
-<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="80" height="80" rx="12" fill="#4285F4"/>
-<text x="40" y="20" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="9" font-weight="bold">Google</text>
-<svg x="25" y="25" width="30" height="30" viewBox="0 0 24 24" fill="white">
-<path d="M3 3V21H21V19H5V3H3ZM7 17H9V10H7V17ZM11 17H13V7H11V17ZM15 17H17V13H15V17Z"/>
-</svg>
-<text x="40" y="70" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8">Analytics</text>
-</svg>

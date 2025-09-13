@@ -1,8 +1,0 @@
-<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="80" height="80" rx="12" fill="#ED8B00"/>
-<text x="40" y="20" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="9" font-weight="bold">Oracle</text>
-<svg x="25" y="25" width="30" height="30" viewBox="0 0 24 24" fill="white">
-<path d="M8.851 18.56S9.394 19.348 11.466 19.348C15.104 19.348 16.997 17.455 16.997 15.562C16.997 13.669 15.104 11.776 11.466 11.776H8.851V18.56ZM8.851 5.44V12.224H11.466C15.104 12.224 16.997 10.331 16.997 8.438C16.997 6.545 15.104 4.652 11.466 4.652C9.394 4.652 8.851 5.44 8.851 5.44Z"/>
-</svg>
-<text x="40" y="70" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8">Java SE 8</text>
-</svg>

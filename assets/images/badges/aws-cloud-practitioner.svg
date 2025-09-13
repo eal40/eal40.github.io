@@ -1,9 +1,0 @@
-<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="80" height="80" rx="12" fill="#FF9900"/>
-<text x="40" y="25" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="bold">AWS</text>
-<svg x="20" y="30" width="40" height="30" viewBox="0 0 24 18" fill="white">
-<path d="M3 9C3 6.79086 4.79086 5 7 5H17C19.2091 5 21 6.79086 21 9V13C21 15.2091 19.2091 17 17 17H7C4.79086 17 3 15.2091 3 13V9Z" fill="white"/>
-<path d="M7 7C6.44772 7 6 7.44772 6 8V14C6 14.5523 6.44772 15 7 15H17C17.5523 15 18 14.5523 18 14V8C18 7.44772 17.5523 7 17 7H7Z" fill="#FF9900"/>
-</svg>
-<text x="40" y="70" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8">Cloud Practitioner</text>
-</svg>
