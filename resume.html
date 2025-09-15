@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eugene Ernest A. Alforte - Resume</title>
+    <title>Eugene Ernest A. Alforte - Internship Resume</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -12,10 +12,10 @@
             padding: 20px;
             background-color: #f4f4f4;
             color: #333;
-        }
-        .container {
             max-width: 800px;
             margin: 0 auto;
+        }
+        .container {
             background-color: white;
             padding: 30px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -29,61 +29,54 @@
         .header h1 {
             margin: 0;
             color: #007bff;
+            font-size: 28px;
         }
         .header p {
             margin: 5px 0;
+            font-size: 14px;
         }
         .section {
-            margin-bottom: 30px;
+            margin-bottom: 25px;
         }
         .section h2 {
             color: #007bff;
             border-bottom: 1px solid #ddd;
             padding-bottom: 5px;
-        }
-        .job, .project, .skill-category {
-            margin-bottom: 20px;
-        }
-        .job h3, .project h3 {
-            margin: 0;
-            color: #333;
-        }
-        .job .date, .project .tech {
-            color: #666;
-            font-style: italic;
-        }
-        .skills-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        .skill-category {
-            flex: 1;
-            min-width: 200px;
-        }
-        .skill-item {
+            font-size: 18px;
             margin-bottom: 10px;
         }
-        .progress-bar {
-            height: 8px;
-            background-color: #e0e0e0;
-            border-radius: 4px;
-            overflow: hidden;
+        .section h3 {
+            margin: 0 0 5px 0;
+            font-size: 16px;
+            color: #333;
         }
-        .progress {
-            height: 100%;
-            background-color: #007bff;
-            border-radius: 4px;
+        .section p {
+            margin: 0 0 10px 0;
+            font-size: 14px;
         }
-        .certificates {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
+        ul {
+            margin: 0;
+            padding-left: 20px;
         }
-        .certificate {
-            background-color: #f9f9f9;
-            padding: 10px;
-            border-radius: 5px;
+        li {
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+        .project-item {
+            margin-bottom: 15px;
+        }
+        .project-item h4 {
+            margin: 0 0 5px 0;
+            font-size: 15px;
+            color: #333;
+        }
+        .tech-tags {
+            font-size: 13px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+        .contact-emoji {
+            font-size: 14px;
         }
     </style>
 </head>
@@ -91,219 +84,85 @@
     <div class="container">
         <div class="header">
             <h1>Eugene Ernest A. Alforte</h1>
-            <p>Information Technology Student & Web Developer</p>
-            <p>Digos, Davao Region, Philippines | contact@eugene-alforte.dev</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/eugene-ernest-alforte-8b924a384/">linkedin.com/in/eugene-ernest-alforte-8b924a384</a> | GitHub: <a href="https://github.com/eal40">github.com/eal40</a></p>
-        </div>
-
-        <div class="section">
-            <h2>Professional Summary</h2>
-            <p>Passionate Information Technology student specializing in web development, with a strong foundation in hardware and a focus on creating user-centric digital experiences. Experienced in modern web technologies, project leadership, and continuous learning through certifications.</p>
+            <p>Digos, Davao Region, Philippines</p>
+            <p><span class="contact-emoji">📧</span> ealforte214@gmail.com | <span class="contact-emoji">🌐</span> <a href="https://www.linkedin.com/in/eugene-ernest-alforte-8b924a384/" target="_blank">LinkedIn</a> | <span class="contact-emoji">💻</span> <a href="https://github.com/eal40" target="_blank">GitHub</a></p>
         </div>
 
         <div class="section">
             <h2>Education</h2>
-            <div class="job">
-                <h3>Bachelor of Science in Information Technology</h3>
-                <p>University of Mindanao Digos College</p>
-                <p class="date">Expected Graduation: 2026</p>
-                <p>Specialization in web design and user experience, with coursework in programming, database management, and system administration.</p>
-            </div>
+            <h3>Bachelor of Science in Information Technology</h3>
+            <p>University of Mindanao Digos College, Digos</p>
+            <p>Expected Graduation: 2026</p>
+            <p><strong>Relevant Coursework:</strong> Web Development, Database Systems, Software Engineering, Human-Computer Interaction, Computer Systems Servicing</p>
         </div>
 
         <div class="section">
             <h2>Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Programming Languages</h3>
-                    <div class="skill-item">
-                        <span>JavaScript</span>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 70%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span>Python</span>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 65%"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Frameworks & Libraries</h3>
-                    <div class="skill-item">
-                        <span>React</span>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 70%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span>Vue.js</span>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 40%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span>Node.js</span>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 70%"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Tools & Technologies</h3>
-                    <div class="skill-item">
-                        <span>Git</span>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 70%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span>Docker</span>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 40%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span>VS Code</span>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 70%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span>Figma</span>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 70%"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Soft Skills</h3>
-                    <div class="skill-item">
-                        <span>Verbal Communication</span>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 85%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span>Written Communication</span>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 80%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span>Project Management</span>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 75%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span>Team Collaboration</span>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 90%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span>Analytical Thinking</span>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 80%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span>Creative Problem Solving</span>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 70%"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <p><strong>Programming & Web:</strong> HTML, CSS, JavaScript, PHP, Python</p>
+            <p><strong>Tools & Frameworks:</strong> Git/GitHub, React, Node.js, Docker, VS Code, Figma</p>
+            <p><strong>Database:</strong> MySQL, MongoDB</p>
+            <p><strong>Other:</strong> UI/UX Design, Hardware Troubleshooting, Responsive Web Design</p>
         </div>
 
         <div class="section">
             <h2>Projects</h2>
-            <div class="project">
-                <h3>E-Commerce Platform</h3>
-                <p class="role">Role: Full Stack Developer</p>
-                <p class="tech">React, Node.js, MongoDB, Stripe</p>
-                <p>Demo e-commerce platform showcasing user authentication, product catalog, shopping cart, and secure payment processing. Built with modern web technologies and responsive design principles.</p>
-                <p>GitHub: <a href="https://github.com/eal40/EcommerceDemo">github.com/eal40/EcommerceDemo</a></p>
+
+            <div class="project-item">
+                <h4>E-Commerce Platform</h4>
+                <p>Designed and developed a demo e-commerce platform with user authentication, product catalog, shopping cart, and secure payment processing.</p>
+                <p class="tech-tags"><strong>Technologies:</strong> React, Node.js, MongoDB, Stripe</p>
+                <p><a href="https://github.com/eal40/EcommerceDemo" target="_blank">GitHub Repository</a></p>
             </div>
-            <div class="project">
-                <h3>3 Motor Inventory System</h3>
-                <p class="role">Role: Full Stack Developer</p>
-                <p class="tech">PHP, MySQL, Docker, Railway</p>
-                <p>Centralized inventory management solution for Three M Motors with multiple branches. Web-based application for efficient tracking, management, and distribution of inventory.</p>
-                <p>GitHub: <a href="https://github.com/eal40/InventorySystem">github.com/eal40/InventorySystem</a> | Demo: <a href="https://inventory-system-demo.up.railway.app/">inventory-system-demo.up.railway.app</a></p>
+
+            <div class="project-item">
+                <h4>3 Motor Inventory System</h4>
+                <p>Built a centralized inventory management solution for multiple branches with efficient tracking, management, and distribution of inventory.</p>
+                <p class="tech-tags"><strong>Technologies:</strong> PHP, MySQL, Docker, Railway</p>
+                <p><a href="https://github.com/eal40/InventorySystem" target="_blank">GitHub Repository</a> | <a href="https://inventory-system-demo.up.railway.app/" target="_blank">Live Demo</a></p>
             </div>
-            <div class="project">
-                <h3>dHWD Billing System</h3>
-                <p class="role">Role: Backend Developer</p>
-                <p class="tech">Visual Basic .NET, .NET Framework 4.8, Windows Forms, Microsoft Access</p>
-                <p>Windows desktop application for comprehensive billing and customer management in small to medium-sized businesses. Features customer management, invoice creation, payment processing, and reporting.</p>
-                <p>GitHub: <a href="https://github.com/eal40/HWDBillingSystem">github.com/eal40/HWDBillingSystem</a></p>
+
+            <div class="project-item">
+                <h4>dHWD Billing System</h4>
+                <p>Developed a Windows desktop application for comprehensive billing and customer management with invoice creation and payment processing.</p>
+                <p class="tech-tags"><strong>Technologies:</strong> Visual Basic .NET, .NET Framework 4.8, Windows Forms, Microsoft Access</p>
+                <p><a href="https://github.com/eal40/HWDBillingSystem" target="_blank">GitHub Repository</a></p>
             </div>
         </div>
 
         <div class="section">
-            <h2>Certifications</h2>
-            <div class="certificates">
-                <div class="certificate">
-                    <h4>Cyber Threat Management</h4>
-                    <p>Certificate of Completion</p>
-                </div>
-                <div class="certificate">
-                    <h4>Google Ads for Beginners</h4>
-                    <p>Certificate of Completion</p>
-                </div>
-                <div class="certificate">
-                    <h4>Installing and Configuring Computer Systems</h4>
-                    <p>Certificate of Completion</p>
-                </div>
-                <div class="certificate">
-                    <h4>Intro to Computer Systems Servicing</h4>
-                    <p>Certificate of Completion</p>
-                </div>
-                <div class="certificate">
-                    <h4>Intro to Microsoft Excel</h4>
-                    <p>Certificate of Completion</p>
-                </div>
-                <div class="certificate">
-                    <h4>Introduction to Cybersecurity</h4>
-                    <p>Certificate of Completion</p>
-                </div>
-                <div class="certificate">
-                    <h4>Maintaining Computer System and Networks</h4>
-                    <p>Certificate of Completion</p>
-                </div>
-                <div class="certificate">
-                    <h4>Network Defense</h4>
-                    <p>Certificate of Completion</p>
-                </div>
-                <div class="certificate">
-                    <h4>Responsive Web Design</h4>
-                    <p>Certificate of Completion</p>
-                </div>
-                <div class="certificate">
-                    <h4>Setting Up Computer Networks</h4>
-                    <p>Certificate of Completion</p>
-                </div>
-                <div class="certificate">
-                    <h4>Setting Up Computer Servers</h4>
-                    <p>Certificate of Completion</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>Awards, Honors and Honorary Mentions</h2>
+            <h2>Experience</h2>
+            <h3>Team Project (Capstone/Group Work) – 2024</h3>
             <ul>
-                <li><strong>Second Honors (Third Year Level)</strong> - University of Mindanao Digos College, GPA: 3.30</li>
+                <li>Collaborated with peers to design and present working prototypes for various systems and applications</li>
+                <li>Practiced agile teamwork, version control with Git, and comprehensive project documentation</li>
+                <li>Served as project lead for capstone project, demonstrating leadership in team organization and strategic decision-making</li>
             </ul>
         </div>
 
         <div class="section">
-            <h2>Interests</h2>
-            <p>Custom PC building and hardware optimization, full-stack web development, cloud computing, AI integration, and continuous learning in emerging technologies.</p>
+            <h2>Certifications & Achievements</h2>
+            <ul>
+                <li>Responsive Web Design Certificate (FreeCodeCamp)</li>
+                <li>Cyber Threat Management Certificate</li>
+                <li>Google Ads for Beginners Certificate</li>
+                <li>Installing and Configuring Computer Systems Certificate</li>
+                <li>Introduction to Cybersecurity Certificate</li>
+                <li>Network Defense Certificate</li>
+                <li>Second Honors (Third Year Level), GPA: 3.30</li>
+                <li>One Day Ideation Bootcamp Certificate of Participation</li>
+                <li>Blockchain Campus Conference 2024 Certificate of Attendance</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Extracurricular / Interests</h2>
+            <ul>
+                <li>Passion for custom PC building and hardware optimization</li>
+                <li>Active in full-stack web development and modern web technologies</li>
+                <li>Interest in cloud computing, AI integration, and emerging technologies</li>
+                <li>Continuous learning through certifications and professional development</li>
+                <li>Experience in user experience design and creating intuitive digital experiences</li>
+            </ul>
         </div>
     </div>
 </body>

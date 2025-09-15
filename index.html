@@ -85,129 +85,120 @@
                 <div class="card">
                     <div class="card-content">
                         <div class="card-header">
-                            <h2>Skills</h2>
-                            <p class="card-description">A comprehensive overview of my technical expertise and proficiency levels across various programming languages, frameworks, and tools.</p>
+                            <h2>Skills & Tech Stack</h2>
+                            <p class="card-description">Tools and technologies I work with</p>
                         </div>
-                        <div class="tabs">
-                            <button class="tab-btn active" data-tab="technical">Technical Skills</button>
-                            <button class="tab-btn" data-tab="soft">Soft Skills</button>
+                        <div class="skills-tabs">
+                            <button class="skills-tab-btn active" data-tab="core-tech" aria-label="View Core Technologies">Core Tech</button>
+                            <button class="skills-tab-btn" data-tab="tools-workflow" aria-label="View Tools and Workflow">Tools & Workflow</button>
+                            <button class="skills-tab-btn" data-tab="focus-areas" aria-label="View Focus Areas">Focus Areas</button>
                         </div>
-                        <div class="tab-content">
-                            <div id="technical" class="tab-pane active">
-                                <div class="skills-grid">
-                                    <div class="skill-category">
-                                        <h3>Programming Languages</h3>
-                                        <div class="skill-item">
-                                            <span><i class="fab fa-js-square"></i> JavaScript</span>
-                                            <div class="progress-bar">
-                                                <div class="progress expert" style="width: 70%"></div>
-                                            </div>
+                        <div class="skills-tab-content">
+                            <div id="core-tech" class="skills-tab-pane active">
+                                <div class="skills-cards-grid">
+                                    <div class="skill-card" data-tooltip="React — used in my E-Commerce Platform project">
+                                        <div class="skill-icon">
+                                            <i class="fab fa-react" aria-hidden="true"></i>
                                         </div>
-                                        <div class="skill-item">
-                                            <span><i class="fab fa-python"></i> Python</span>
-                                            <div class="progress-bar">
-                                                <div class="progress intermediate" style="width: 65%"></div>
-                                            </div>
-                                        </div>
-                                        <!-- Add more skills -->
+                                        <span class="skill-label">React</span>
                                     </div>
-                                    <div class="skill-category">
-                                        <h3>Frameworks & Libraries</h3>
-                                        <div class="skill-item">
-                                            <span><i class="fab fa-react"></i> React</span>
-                                            <div class="progress-bar">
-                                                <div class="progress expert" style="width: 70%"></div>
-                                            </div>
+                                    <div class="skill-card" data-tooltip="Node.js — used in my E-Commerce Platform project">
+                                        <div class="skill-icon">
+                                            <i class="fab fa-node-js" aria-hidden="true"></i>
                                         </div>
-                                        <div class="skill-item">
-                                            <span><i class="fab fa-vuejs"></i> Vue.js</span>
-                                            <div class="progress-bar">
-                                                <div class="progress beginner" style="width: 40%"></div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item">
-                                            <span><i class="fab fa-node-js"></i> Node.js</span>
-                                            <div class="progress-bar">
-                                                <div class="progress expert" style="width: 70%"></div>
-                                            </div>
-                                        </div>
+                                        <span class="skill-label">Node.js</span>
                                     </div>
-                                    <div class="skill-category">
-                                        <h3>Tools & Technologies</h3>
-                                        <div class="skill-item">
-                                            <span><i class="fab fa-git-alt"></i> Git</span>
-                                            <div class="progress-bar">
-                                                <div class="progress expert" style="width: 70%"></div>
-                                            </div>
+                                    <div class="skill-card" data-tooltip="MongoDB — used in my E-Commerce Platform project">
+                                        <div class="skill-icon">
+                                            <i class="fas fa-database" aria-hidden="true"></i>
                                         </div>
-                                        <div class="skill-item">
-                                            <span><i class="fab fa-docker"></i> Docker</span>
-                                            <div class="progress-bar">
-                                                <div class="progress beginner" style="width: 40%"></div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item">
-                                            <span><i class="fas fa-code"></i> VS Code</span>
-                                            <div class="progress-bar">
-                                                <div class="progress expert" style="width: 70%"></div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item">
-                                            <span><i class="fab fa-figma"></i> Figma</span>
-                                            <div class="progress-bar">
-                                                <div class="progress expert" style="width: 70%"></div>
-                                            </div>
-                                        </div>
+                                        <span class="skill-label">MongoDB</span>
                                     </div>
-                                    <!-- Add more categories -->
+                                    <div class="skill-card" data-tooltip="PHP — used in my 3 Motor Inventory System project">
+                                        <div class="skill-icon">
+                                            <i class="fab fa-php" aria-hidden="true"></i>
+                                        </div>
+                                        <span class="skill-label">PHP</span>
+                                    </div>
+                                    <div class="skill-card" data-tooltip="MySQL — used in my 3 Motor Inventory System project">
+                                        <div class="skill-icon">
+                                            <i class="fas fa-database" aria-hidden="true"></i>
+                                        </div>
+                                        <span class="skill-label">MySQL</span>
+                                    </div>
+                                    <div class="skill-card" data-tooltip="Docker — used in my 3 Motor Inventory System project">
+                                        <div class="skill-icon">
+                                            <i class="fab fa-docker" aria-hidden="true"></i>
+                                        </div>
+                                        <span class="skill-label">Docker</span>
+                                    </div>
+                                    <div class="skill-card" data-tooltip="Visual Basic .NET — used in my dHWD Billing System project">
+                                        <div class="skill-icon">
+                                            <i class="fas fa-code" aria-hidden="true"></i>
+                                        </div>
+                                        <span class="skill-label">VB.NET</span>
+                                    </div>
+                                    <div class="skill-card" data-tooltip="JavaScript — core language for web development">
+                                        <div class="skill-icon">
+                                            <i class="fab fa-js-square" aria-hidden="true"></i>
+                                        </div>
+                                        <span class="skill-label">JavaScript</span>
+                                    </div>
                                 </div>
                             </div>
-                            <div id="soft" class="tab-pane">
-                                <div class="skills-grid">
-                                    <div class="skill-category">
-                                        <h3>Communication</h3>
-                                        <div class="skill-item">
-                                            <span><i class="fas fa-microphone"></i> Verbal Communication</span>
-                                            <div class="progress-bar">
-                                                <div class="progress expert" style="width: 85%"></div>
-                                            </div>
+                            <div id="tools-workflow" class="skills-tab-pane">
+                                <div class="skills-cards-grid">
+                                    <div class="skill-card" data-tooltip="Git — version control for all my projects">
+                                        <div class="skill-icon">
+                                            <i class="fab fa-git-alt" aria-hidden="true"></i>
                                         </div>
-                                        <div class="skill-item">
-                                            <span><i class="fas fa-pen"></i> Written Communication</span>
-                                            <div class="progress-bar">
-                                                <div class="progress expert" style="width: 80%"></div>
-                                            </div>
-                                        </div>
+                                        <span class="skill-label">Git</span>
                                     </div>
-                                    <div class="skill-category">
-                                        <h3>Leadership & Teamwork</h3>
-                                        <div class="skill-item">
-                                            <span><i class="fas fa-tasks"></i> Project Management</span>
-                                            <div class="progress-bar">
-                                                <div class="progress expert" style="width: 75%"></div>
-                                            </div>
+                                    <div class="skill-card" data-tooltip="Linux — operating system for development">
+                                        <div class="skill-icon">
+                                            <i class="fab fa-linux" aria-hidden="true"></i>
                                         </div>
-                                        <div class="skill-item">
-                                            <span><i class="fas fa-users"></i> Team Collaboration</span>
-                                            <div class="progress-bar">
-                                                <div class="progress expert" style="width: 90%"></div>
-                                            </div>
-                                        </div>
+                                        <span class="skill-label">Linux</span>
                                     </div>
-                                    <div class="skill-category">
-                                        <h3>Problem Solving</h3>
-                                        <div class="skill-item">
-                                            <span><i class="fas fa-brain"></i> Analytical Thinking</span>
-                                            <div class="progress-bar">
-                                                <div class="progress expert" style="width: 80%"></div>
-                                            </div>
+                                    <div class="skill-card" data-tooltip="VS Code — my primary code editor">
+                                        <div class="skill-icon">
+                                            <i class="fas fa-code" aria-hidden="true"></i>
                                         </div>
-                                        <div class="skill-item">
-                                            <span><i class="fas fa-lightbulb"></i> Creative Problem Solving</span>
-                                            <div class="progress-bar">
-                                                <div class="progress expert" style="width: 70%"></div>
-                                            </div>
+                                        <span class="skill-label">VS Code</span>
+                                    </div>
+                                    <div class="skill-card" data-tooltip="AI-assisted Development — using AI tools for coding">
+                                        <div class="skill-icon">
+                                            <i class="fas fa-robot" aria-hidden="true"></i>
                                         </div>
+                                        <span class="skill-label">AI Development</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="focus-areas" class="skills-tab-pane">
+                                <div class="skills-cards-grid">
+                                    <div class="skill-card" data-tooltip="Web Design — creating responsive and modern websites">
+                                        <div class="skill-icon">
+                                            <i class="fas fa-palette" aria-hidden="true"></i>
+                                        </div>
+                                        <span class="skill-label">Web Design</span>
+                                    </div>
+                                    <div class="skill-card" data-tooltip="User Flow — designing intuitive user experiences">
+                                        <div class="skill-icon">
+                                            <i class="fas fa-route" aria-hidden="true"></i>
+                                        </div>
+                                        <span class="skill-label">User Flow</span>
+                                    </div>
+                                    <div class="skill-card" data-tooltip="UI/UX Enhancements — improving user interfaces">
+                                        <div class="skill-icon">
+                                            <i class="fas fa-magic" aria-hidden="true"></i>
+                                        </div>
+                                        <span class="skill-label">UI/UX</span>
+                                    </div>
+                                    <div class="skill-card" data-tooltip="Hardware Tinkering — building and customizing PC systems">
+                                        <div class="skill-icon">
+                                            <i class="fas fa-cogs" aria-hidden="true"></i>
+                                        </div>
+                                        <span class="skill-label">Hardware</span>
                                     </div>
                                 </div>
                             </div>

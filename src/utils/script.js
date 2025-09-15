@@ -246,23 +246,73 @@ fadeInElements.forEach(element => {
   fadeInObserver.observe(element);
 });
 
-// Tab functionality
-const tabBtns = document.querySelectorAll('.tab-btn');
-const tabPanes = document.querySelectorAll('.tab-pane');
+// Skills Tab functionality
+const skillsTabBtns = document.querySelectorAll('.skills-tab-btn');
+const skillsTabPanes = document.querySelectorAll('.skills-tab-pane');
 
-tabBtns.forEach(btn => {
+skillsTabBtns.forEach(btn => {
   btn.addEventListener('click', () => {
-    tabBtns.forEach(b => b.classList.remove('active'));
-    tabPanes.forEach(p => p.classList.remove('active'));
+    // Remove active class from all buttons and panes
+    skillsTabBtns.forEach(b => b.classList.remove('active'));
+    skillsTabPanes.forEach(p => p.classList.remove('active'));
+
+    // Add active class to clicked button
     btn.classList.add('active');
+
+    // Show corresponding tab pane
     const tab = btn.dataset.tab;
-    document.getElementById(tab).classList.add('active');
+    const targetPane = document.getElementById(tab);
+    if (targetPane) {
+      targetPane.classList.add('active');
+    }
   });
+
+  // Keyboard navigation
+  btn.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      btn.click();
+    }
+  });
+});
+
+// Initialize skills cards animation on tab switch
+function initializeSkillsCards() {
+  const skillCards = document.querySelectorAll('.skill-card');
+  skillCards.forEach((card, index) => {
+    // Reset animation
+    card.style.opacity = '0';
+    card.style.transform = 'translateY(30px)';
+
+    // Trigger animation
+    setTimeout(() => {
+      card.style.opacity = '1';
+      card.style.transform = 'translateY(0)';
+    }, index * 100);
+  });
+}
+
+// Observe tab changes to re-trigger animations
+const skillsTabObserver = new MutationObserver((mutations) => {
+  mutations.forEach((mutation) => {
+    if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+      const target = mutation.target;
+      if (target.classList.contains('skills-tab-pane') && target.classList.contains('active')) {
+        setTimeout(initializeSkillsCards, 100);
+      }
+    }
+  });
+});
+
+skillsTabPanes.forEach(pane => {
+  skillsTabObserver.observe(pane, { attributes: true });
 });
 
 // Initialize animations
 document.addEventListener('DOMContentLoaded', () => {
   animateProgressBars();
+  // Delay skills cards initialization to ensure DOM is fully loaded
+  setTimeout(initializeSkillsCards, 100);
 });
 
 // Performance optimization: Lazy load images
