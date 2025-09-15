@@ -120,29 +120,106 @@ if (taglineElement) {
   typeWriter(taglineElement, originalText, 50);
 }
 
-// Form validation
+// EmailJS initialization
+(function() {
+  emailjs.init('VfAkGExEauDpOmXfO');
+})();
+
+// Contact form with EmailJS
 const contactForm = document.getElementById('contact-form');
 if (contactForm) {
   contactForm.addEventListener('submit', (e) => {
-    const formData = new FormData(contactForm);
-    const name = formData.get('name').trim();
-    const email = formData.get('email').trim();
-    const message = formData.get('message').trim();
+    e.preventDefault();
+
+    const name = contactForm.name.value.trim();
+    const email = contactForm.email.value.trim();
+    const message = contactForm.message.value.trim();
 
     // Basic validation
     if (!name || !email || !message) {
-      e.preventDefault();
-      alert('Please fill in all fields.');
+      showModal('error', 'Validation Error', 'Please fill in all fields.');
       return;
     }
 
     if (!isValidEmail(email)) {
-      e.preventDefault();
-      alert('Please enter a valid email address.');
+      showModal('error', 'Invalid Email', 'Please enter a valid email address.');
       return;
     }
 
-    // Form will submit to mailto
+    // Show loading state
+    const submitBtn = contactForm.querySelector('button[type="submit"]');
+    const originalText = submitBtn.textContent;
+    submitBtn.textContent = 'Sending...';
+    submitBtn.disabled = true;
+
+    // Send email using EmailJS
+    emailjs.send('service_79n9w0r', 'template_eh4h3vk', {
+      from_name: name,
+      from_email: email,
+      message: message,
+      to_name: 'Eugene',
+    })
+    .then(function(response) {
+      console.log('SUCCESS!', response.status, response.text);
+      showModal('success', 'Message Sent!', 'Thank you for your message! I will get back to you soon.');
+      contactForm.reset();
+    }, function(error) {
+      console.log('FAILED...', error);
+      showModal('error', 'Send Failed', 'Sorry, there was an error sending your message. Please try again later.');
+    })
+    .finally(function() {
+      // Reset button state
+      submitBtn.textContent = originalText;
+      submitBtn.disabled = false;
+    });
+  });
+}
+
+// Custom Modal Functions
+function showModal(type, title, message) {
+  const modal = document.getElementById('contact-modal');
+  const modalIcon = document.getElementById('modal-icon');
+  const modalTitle = document.getElementById('modal-title');
+  const modalMessage = document.getElementById('modal-message');
+
+  // Set modal content
+  modalTitle.textContent = title;
+  modalMessage.textContent = message;
+
+  // Set icon and styling based on type
+  if (type === 'success') {
+    modalIcon.innerHTML = '<i class="fas fa-check-circle"></i>';
+    modalIcon.className = 'modal-icon success';
+  } else if (type === 'error') {
+    modalIcon.innerHTML = '<i class="fas fa-exclamation-triangle"></i>';
+    modalIcon.className = 'modal-icon error';
+  }
+
+  // Show modal
+  modal.classList.add('show');
+}
+
+// Modal close functionality
+const modalCloseBtn = document.getElementById('modal-close');
+const modal = document.getElementById('contact-modal');
+
+if (modalCloseBtn && modal) {
+  modalCloseBtn.addEventListener('click', () => {
+    modal.classList.remove('show');
+  });
+
+  // Close modal when clicking outside
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.classList.remove('show');
+    }
+  });
+
+  // Close modal with Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('show')) {
+      modal.classList.remove('show');
+    }
   });
 }
 

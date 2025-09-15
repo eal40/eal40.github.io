@@ -9,6 +9,7 @@
     <meta name="author" content="Eugene Ernest A. Alforte">
     <link rel="stylesheet" href="src/styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <link rel="icon" href="public/icons/favicon.ico" type="image/x-icon">
     <!-- Open Graph tags -->
     <meta property="og:title" content="Eugene Ernest A. Alforte - IT Student Portfolio">
@@ -393,12 +394,28 @@
                                     <a href="https://github.com/eal40" aria-label="GitHub" target="_blank">GitHub</a>
                                 </div>
                             </div>
-                            <form id="contact-form" action="mailto:ealforte214@gmail.com" method="post" enctype="text/plain">
+                            <form id="contact-form">
                                 <input type="text" name="name" placeholder="Your Name" required>
                                 <input type="email" name="email" placeholder="Your Email" required>
                                 <textarea name="message" placeholder="Your Message" required></textarea>
                                 <button type="submit" class="btn primary">Send Message</button>
                             </form>
+
+                            <!-- Custom Modal -->
+                            <div id="contact-modal" class="modal">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <span id="modal-icon" class="modal-icon"></span>
+                                        <h3 id="modal-title"></h3>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p id="modal-message"></p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button id="modal-close" class="btn primary">OK</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
