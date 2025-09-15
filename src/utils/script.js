@@ -24,6 +24,34 @@ if (savedTheme) {
 }
 updateThemeIcon();
 
+// Mobile menu toggle functionality
+const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+const nav = document.querySelector('nav');
+
+function updateMobileMenuIcon() {
+  const icon = mobileMenuToggle.querySelector('i');
+  if (nav.classList.contains('mobile-menu-open')) {
+    icon.className = 'fas fa-times';
+  } else {
+    icon.className = 'fas fa-bars';
+  }
+}
+
+if (mobileMenuToggle && nav) {
+  mobileMenuToggle.addEventListener('click', () => {
+    nav.classList.toggle('mobile-menu-open');
+    updateMobileMenuIcon();
+  });
+
+  // Close mobile menu when a nav link is clicked
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('mobile-menu-open');
+      updateMobileMenuIcon();
+    });
+  });
+}
+
 // Smooth scroll for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
